@@ -1,0 +1,482 @@
+@charset "UTF-8";
+/*---------------------------------------------------------------------------*\
+  #VARIABLE
+\*---------------------------------------------------------------------------*/
+/*-- COLOR TEXT ---------------------*/
+:root {
+  --color-default: rgb(255, 255, 255);
+}
+
+/*-- BACKGROUD COLOR ----------------*/
+:root {
+  --bg-primary: rgb(86, 184, 230);
+  --bg-secondary:rgb(27, 47, 69);
+  --bg-secondary-opacity:rgba(27, 47, 69, 0.65);
+  --bg-third:rgb(247, 249, 252);
+}
+
+/*---------------------------------------------------------------------------*\
+  #RESET STYLE AND REGLE
+\*---------------------------------------------------------------------------*/
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.area {
+  max-width: 1340px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*---------------------------------------------------------------------------*\
+  #FAMILY-FONT
+\*---------------------------------------------------------------------------*/
+:root {
+  --font-primary: Montserrat, sans-serif;
+  --font-secondary: Raleway, sans-serif;
+  --font-default: Open Sans, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+h1 {
+  font-family: var(--font-default);
+}
+
+h2,
+h3,
+p,
+a {
+  font-family: var(--font-secondary);
+}
+
+/*---------------------------------------------------------------------------*\
+  #SIZE-FONT
+\*---------------------------------------------------------------------------*/
+/*--- BANNER ------------------------*/
+.branding {
+  font-size: 24px;
+}
+
+.intro-site__subheading {
+  font-size: 48px;
+}
+.intro-site p {
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+.presentation__headline {
+  font-size: 32px;
+}
+
+/*---------------------------------------------------------------------------*\
+  #COLOR
+\*---------------------------------------------------------------------------*/
+/*--- DEFAULT -----------------------*/
+a {
+  color: white;
+}
+
+/*--- BANNER ------------------------*/
+.branding {
+  color: var(--color-default);
+}
+
+.intro-site__container {
+  color: var(--color-default);
+}
+
+.play-circle {
+  font-size: 32px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 3px;
+  background-color: var(--bg-primary);
+  color: var(--bg-secondary);
+}
+
+.presentation__slider__btn-before, .presentation__slider__btn-next {
+  font-size: 36px;
+  font-weight: lighter;
+}
+
+.pagination__nav {
+  position: absolute;
+  align-self: flex-end;
+  left: 33%;
+}
+.pagination__content {
+  display: flex;
+}
+.pagination__content .item {
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+/*---------------------------------------------------------------------------*\
+  #NAVIGATOR - MISE EN PLACE DE MENU DE NAVIGATION PRINCIPAL
+\*---------------------------------------------------------------------------*/
+.nav--padding {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 5em;
+}
+.nav__main-list {
+  display: flex;
+  width: 100%;
+}
+.nav__main-item {
+  position: relative;
+  margin: 0.9em;
+}
+
+.dropdown {
+  position: absolute;
+  top: 3em;
+  left: 0em;
+  visibility: hidden;
+}
+
+.deep-dropdown {
+  position: absolute;
+  top: 5em;
+  left: 5em;
+}
+
+.btn[type=arrow-down] {
+  display: flex;
+}
+
+/*---------------------------------------------------------------------------*\
+  #HOME
+\*---------------------------------------------------------------------------*/
+/*  conteneur header -------------------*/
+.banner {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 1.6em 0;
+}
+
+.branding {
+  z-index: 2;
+}
+
+/*---------------------------------------------------------------------------*\
+  #ABOUT
+\*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*\
+  #INTRO-SITE - section surposer dans la banniére
+\*---------------------------------------------------------------------------*/
+.intro-site__container {
+  width: 100%;
+  top: 0;
+  z-index: -1;
+}
+.intro-site__content {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  padding: 15% 80px 15%;
+  width: 440px;
+}
+.intro-site p {
+  margin-left: 2.2em;
+}
+
+.nav__secondary {
+  padding-top: 15%;
+}
+.nav__secondary-list {
+  display: flex;
+  align-items: stretch;
+}
+.nav__secondary-item {
+  display: flex;
+  align-items: center;
+}
+.nav__secondary-item:first-child {
+  padding: 15px 40px;
+}
+.nav__secondary-item:last-child {
+  margin-left: 1.5em;
+}
+.nav__secondary-item:last-child .btn {
+  margin-left: 5px;
+}
+
+/*---------------------------------------------------------------------------*\
+  #HOME
+\*---------------------------------------------------------------------------*/
+/*-- PRIMARY ------------------------*/
+.home__primary {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+.home__headline {
+  align-self: center;
+}
+
+/*-- PRIMARY / SECTION PRESENTATION -*/
+.presentation__headline--flex {
+  position: relative;
+  align-self: center;
+  padding-bottom: 8em;
+}
+.presentation__headline--border {
+  position: absolute;
+  min-width: 60px;
+  left: 33%;
+}
+.presentation__img {
+  display: block;
+  width: 100%;
+}
+.presentation__img--margin-right {
+  margin-right: 6em;
+}
+.presentation__content {
+  width: 476px;
+  padding: 0 16px;
+  margin: 0 10px;
+}
+.presentation--position-row {
+  display: flex;
+  align-items: center;
+}
+.presentation__slider--nowrap-overflow {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0 10px;
+  overflow: hidden;
+  position: relative;
+}
+.presentation__slider--nowrap-overflow .material-icons {
+  position: absolute;
+  align-self: center;
+}
+.presentation__slider__btn-before {
+  left: 0;
+}
+.presentation__slider__btn-next {
+  right: 0;
+}
+.presentation__slider-content--flex {
+  display: flex;
+}
+
+/*-- BINARY -------------------------*/
+.home__binary {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+
+.services__headline {
+  align-self: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services__item {
+  width: 440px;
+  height: 115px;
+}
+
+/*-- TERNARY ------------------------*/
+.home__ternary .bg--flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0;
+}
+.home__ternary .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*-- FOURTH -------------------------*/
+.home__fourth .task__container-main {
+  display: flex;
+  justify-content: space-between;
+}
+.home__fourth .task__container-sub {
+  width: 740px;
+  margin-top: -20em;
+  padding-bottom: 20em;
+}
+.home__fourth .task__picture {
+  align-self: flex-end;
+  justify-self: flex-start;
+}
+.home__fourth .task__list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.home__fourth .task-items .task-list__level-sub {
+  display: flex;
+  flex-direction: column;
+}
+.home__fourth .task-items .task-list__level-sub .item {
+  padding: 10px;
+}
+.home__fourth .insulating-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
+/*-- FIFTH --------------------------*/
+.home__fifth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+}
+.home__fifth .workplace--position-row {
+  display: flex;
+  padding: 25px;
+}
+.home__fifth .workplace__picture {
+  width: 310px;
+  padding: 10px;
+}
+.home__fifth .workplace__picture img {
+  width: 100%;
+}
+
+/*---------------------------------------------------------------------------*\
+  #ABOUT
+\*---------------------------------------------------------------------------*/
+.footer-page {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+.footer-page .--flex-row {
+  display: flex;
+}
+.footer-page .container-main {
+  width: 45%;
+  margin-right: 50px;
+}
+.footer-page .container-sub {
+  display: flex;
+  padding-bottom: 80px;
+}
+.footer-page .content {
+  padding-left: 40px;
+}
+.footer-page span {
+  align-self: center;
+}
+
+.banner {
+  background-color: var(--bg-secondary);
+}
+
+/*---------------------------------------------------------------------------*\
+  #BANNER - STYLISATION DU HEADER PRINCIPAL
+\*---------------------------------------------------------------------------*/
+.intro-site__container {
+  background-image: url(../../../img/hero-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.intro-site--color-opacity {
+  background-color: var(--bg-secondary-opacity);
+}
+.intro-site__content {
+  background-color: var(--bg-secondary);
+}
+
+.nav__secondary-item:first-child {
+  background-color: var(--bg-primary);
+  border-radius: 35px;
+}
+.nav i {
+  color: white;
+  background-color: white;
+}
+
+/*----------------------------------*/
+/*---------------------------------------------------------------------------*\
+  #BANNER
+\*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*\
+  #INTRO
+\*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*\
+  #AREA - PRIMARY
+\*---------------------------------------------------------------------------*/
+main {
+  background-color: var(--color-default);
+}
+
+/*---------------------------------------------------------------------------*\
+  #AREA - TRENARY
+\*---------------------------------------------------------------------------*/
+.home__ternary--img-attachment {
+  background: url(../../../img/cta-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.home__ternary .bg--color-opacity {
+  background-color: var(--bg-secondary-opacity);
+}
+
+/*---------------------------------------------------------------------------*\
+  #AREA - FOURTH
+\*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*\
+AREA PRIMARY - PRESENTATION
+\*---------------------------------------------------------------------------*/
+.presentation--position-row {
+  background-color: var(--bg-third);
+}
+
+.presentation__headline--border {
+  border-bottom: 2px solid var(--bg-primary);
+}
+
+/*# sourceMappingURL=style.css.map */

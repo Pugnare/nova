@@ -1,0 +1,17 @@
+
+.play-circle {
+  font-size: 32px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 3px;
+  background-color: var(--bg-primary);
+  color: var(--bg-secondary);
+}
+
+.presentation{
+
+&__slider__btn-before, &__slider__btn-next{
+  font-size: 36px;
+font-weight: lighter;
+  }
+}

@@ -1,0 +1,20 @@
+@import './utils/variable';
+
+@import './base/reset';
+@import './base/default';
+@import './base/fonts';
+@import './base/icons';
+@import './base/panagition';
+
+@import './components/navigator';
+
+@import './layout/header';
+@import './layout/intro-site';
+@import './layout/main';
+@import './layout/footer';
+
+@import './pages/navigator';
+@import './pages/banner';
+@import './pages/home';
+@import './pages/presentation';
+@import './pages/footer';

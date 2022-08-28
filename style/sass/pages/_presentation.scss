@@ -1,0 +1,14 @@
+/*---------------------------------------------------------------------------*\
+AREA PRIMARY - PRESENTATION
+\*---------------------------------------------------------------------------*/
+.presentation--position-row{
+  background-color: var(--bg-third);
+}
+
+
+.presentation {
+
+  &__headline--border {
+    border-bottom: 2px solid var(--bg-primary);
+  }
+}

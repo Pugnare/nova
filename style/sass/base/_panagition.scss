@@ -1,0 +1,20 @@
+.pagination {
+  &__nav {
+    position:absolute;
+    align-self: flex-end;
+    left: 33%;
+    
+   
+  }
+
+  &__content {
+    display: flex;
+
+    .item {
+      height: 10px;
+      width: 10px;
+      background-color: red;
+      border-radius: 50%;
+    }
+  }
+}

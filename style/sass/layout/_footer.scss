@@ -1,0 +1,27 @@
+.footer-page{
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  
+  .--flex-row{
+    display: flex;
+  }
+
+  .container-main{
+    width: 45%;
+    margin-right: 50px;
+  }
+
+  .container-sub{
+    display: flex;
+    padding-bottom: 80px;
+  }
+
+  .content{
+    padding-left: 40px;
+  }
+
+  span{
+    align-self: center;
+  }
+}

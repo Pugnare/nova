@@ -1,0 +1,79 @@
+/*---------------------------------------------------------------------------*\
+  #FAMILY-FONT
+\*---------------------------------------------------------------------------*/
+
+:root {
+  --font-primary: Montserrat, sans-serif;
+  --font-secondary: Raleway, sans-serif;
+  --font-default: Open Sans, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+h1 {
+  font-family: var(--font-default);
+}
+
+h2,
+h3,
+p,
+a {
+  font-family: var(--font-secondary);
+}
+
+
+/*---------------------------------------------------------------------------*\
+  #SIZE-FONT
+\*---------------------------------------------------------------------------*/
+
+$--font-size-bit-small: 15px;
+$--font-size-small: 16px;
+$--font-size-medium: 18px;
+$--font-size-bit-big: 24px;
+$--font-size-big: 32px;
+$--font-size-very-big: 48px;
+
+
+
+/*--- BANNER ------------------------*/
+.branding {
+  font-size: $--font-size-bit-big;
+}
+
+.intro-site {
+  &__subheading {
+    font-size: $--font-size-very-big;
+  }
+
+  p {
+    font-size: $--font-size-bit-small;
+    line-height: 1.5em;
+  }
+}
+
+.presentation {
+
+  &__headline {
+    font-size: $--font-size-big;
+  }
+}
+
+
+
+/*---------------------------------------------------------------------------*\
+  #COLOR
+\*---------------------------------------------------------------------------*/
+
+/*--- DEFAULT -----------------------*/
+a {
+  color: white;
+}
+
+/*--- BANNER ------------------------*/
+.branding {
+  color: var(--color-default);
+
+}
+
+.intro-site__container {
+  color: var(--color-default);
+}
+

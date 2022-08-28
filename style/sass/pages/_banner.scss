@@ -1,0 +1,38 @@
+/*---------------------------------------------------------------------------*\
+  #BANNER - STYLISATION DU HEADER PRINCIPAL
+\*---------------------------------------------------------------------------*/
+
+
+
+
+
+.intro-site {
+  &__container {
+    background-image: url(../../../img/hero-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  &--color-opacity {
+    background-color: var(--bg-secondary-opacity);
+  }
+
+  &__content {
+    background-color: var(--bg-secondary);
+  }
+}
+
+.nav {
+
+  &__secondary-item:first-child {
+    background-color: var(--bg-primary);
+    border-radius: 35px;
+  }
+
+  i{
+    color: white;
+    background-color: white;
+  }
+}
+
+/*----------------------------------*/

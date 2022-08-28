@@ -1,0 +1,57 @@
+/*---------------------------------------------------------------------------*\
+  #INTRO-SITE - section surposer dans la banniére
+\*---------------------------------------------------------------------------*/
+
+.intro-site {
+
+  &__container {
+    width: 100%;
+    top: 0;
+    z-index: -1;
+  }
+
+  &__content {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    padding: 15% 80px 15%;
+    width: 440px;
+  }
+
+  p {
+    margin-left: 2.2em;
+  }
+}
+
+.nav {
+
+  &__secondary {
+    padding-top: 15%;
+  }
+
+  &__secondary-list {
+    display: flex;
+    align-items: stretch;
+
+  }
+
+  &__secondary-item {
+    display: flex;
+    align-items: center;
+  }
+
+  
+  &__secondary-item:first-child {
+    padding: 15px 40px;
+  
+  }
+
+  &__secondary-item:last-child{
+    margin-left: 1.5em;
+    
+    .btn {
+      margin-left: 5px;
+    }
+  }
+
+}
