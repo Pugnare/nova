@@ -266,7 +266,7 @@ a {
   width: 100%;
 }
 .presentation__img--margin-right {
-  margin-right: 6em;
+  width: 60%;
 }
 .presentation__content {
   width: 476px;
@@ -276,27 +276,38 @@ a {
 .presentation--position-row {
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 .presentation__slider--nowrap-overflow {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: 0 10px;
-  overflow: hidden;
+  width: 40%;
+  margin: 6em;
   position: relative;
-}
-.presentation__slider--nowrap-overflow .material-icons {
-  position: absolute;
-  align-self: center;
-}
-.presentation__slider__btn-before {
-  left: 0;
-}
-.presentation__slider__btn-next {
-  right: 0;
+  overflow: hidden;
 }
 .presentation__slider-content--flex {
   display: flex;
+}
+
+.pagination__container {
+  position: absolute;
+}
+.pagination__container .material-icons {
+  position: absolute;
+  align-self: center;
+}
+.pagination__slider__btn-before {
+  left: 0;
+}
+.pagination__slider__btn-next {
+  right: 0;
+}
+.pagination__slider-content--flex {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 /*-- BINARY -------------------------*/
@@ -385,7 +396,7 @@ a {
   width: 100%;
 }
 
-/*---------------------------------------------------------------------------*\
+/*-------------------------------------------------------------------------*\
   #ABOUT
 \*---------------------------------------------------------------------------*/
 .footer-page {
