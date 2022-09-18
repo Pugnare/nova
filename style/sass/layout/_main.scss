@@ -28,7 +28,7 @@
   &__headline--flex {
     position: relative;
     align-self: center;
-    padding-bottom: 8em;
+    padding-bottom: 4em;
   }
 
   &__headline--border {
@@ -36,54 +36,65 @@
     min-width: 60px;
     left: 33%;
   }
+}
 
-  &__img {
-    display: block;
-    width: 100%;
-  }
+.slider {
 
-  &__img--margin-right {
-    margin-right: 6em;
-  }
-
-  &__content {
-    width: 476px;
-    padding: 0 16px;
-    margin: 0 10px;
-  }
-
-  &--position-row {
-    display: flex;
-    align-items: center;
-  }
-
-  &__slider--nowrap-overflow {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding: 0 10px;
-    overflow: hidden;
-    position: relative;
-
-    .material-icons{
-     position:absolute;
-      align-self: center;
-    }
-  }
-
-
-  &__slider__btn-before{
-    left: 0;
-  }
-  &__slider__btn-next{
-    right: 0;
-  }
-
-  &__slider-content--flex {
+  &__container {
     display: flex;
   }
 }
 
+.slider {
+  //image
+
+  &__img--width {
+    width: 45%;
+    margin-right: 9em;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
+
+.slider {
+
+  &__carry {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 40%;
+  }
+
+  &__content--row {
+    display: flex;
+    position: relative;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 476px;
+    padding: 0 16px;
+    margin: 0 10px;
+  }
+}
+
+.pagination {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 33em;
+  }
+
+  &__before {
+    margin-left: -30px;
+  }
+}
 
 /*-- BINARY -------------------------*/
 

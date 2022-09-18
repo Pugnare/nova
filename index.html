@@ -6,12 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="style/css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-
-  <link rel="stylesheet" href="style/css/style.css">
+  <script src="https://kit.fontawesome.com/3e6bead995.js" crossorigin="anonymous"></script>
 
   <title>Nova</title>
 </head>
@@ -96,32 +94,22 @@
     <section class="area home__primary">
 
       <div class="presentation__headline--flex">
-        <h2 class="headline presentation__headline">why choose us</h2>
+        <h2 class="presentation__headline headline">why choose us</h2>
         <div class="presentation__headline--border"></div>
       </div>
 
-      <div class="presentation--position-row">
 
-        <div class="presentation__img--margin-right">
-          <img class="presentation__img" src="./img/why-us-bg.jpg" alt="groupe de travaille lors d'une réuion">
+      <div class="slider__container">
+
+        <div class="slider__img--width">
+          <img class="slider__img" src="./img/why-us-bg.jpg" alt="groupe de travaille lors d'une réuion">
         </div>
 
-        <div class="presentation__slider--nowrap-overflow">
-          <i class="presentation__slider__btn-before material-icons">arrow_back_ios</i>
-          <i class="presentation__slider__btn-next   material-icons">arrow_forward_ios</i>
-          <nav class="pagination__nav">
-            <ul class="pagination__content">
-              <li class="item"><span></span></li>
-              <li class="item"><span></span></li>
-              <li class="item"><span></span></li>
-              <li class="item"><span></span></li>
-              <li class="item"><span></span></li>
-            </ul>
-          </nav>
+        <div class="slider__carry">
 
-          <div class="presentation__slider-content--flex">
+          <div class="slider__content--row">
 
-            <article class="presentation__content">
+            <article class="slider__content">
               <h2 class="subheading"> Let's grow your business together</h2>
               <p><span> Optio reicieendis accusantium iusto architecto at quia minima maiores quidem, dolorum.</span>
               </p>
@@ -131,7 +119,7 @@
                 sapiente optio.</p>
             </article>
 
-            <article class="presentation__content">
+            <article class="slider__content">
               <h2 class="subheading"> Unde perspiciatis ut repellat dolorem</h2>
               <p><span> Amet cumque nam sed voluptas doloribus iusto. Dolorem eos aliquam quis.</span></p>
               <p>Dolorem quia fuga conse__contentctetur voluptatem. Earum consequatur nulla maxime necessitatibus cum
@@ -139,14 +127,14 @@
                 ea. Facere est dolores fugiat dolor.</p>
             </article>
 
-            <article class="presentation__content">
+            <article class="slider__content">
               <h2 class="subheading">Aliquid non alias minus</h2>
               <p><span>Necessitatibus voluptatibus explicabo dolores a vitae voluptatum.</span></p>
               <p>Neque voluptates aut. Soluta aut perspiciatis porro deserunt. Voluptate ut itaque velit. Aut
                 consectetur voluptatem aspernatur sequi sit laborum. Voluptas enim dolorum fugiat aut.</p>
             </article>
 
-            <article class="presentation__content">
+            <article class="slider__content">
               <h2 class="subheading">Necessitatibus suscipit non voluptatem quibusdam</h2>
               <p><span>Tempora quos est ut quia adipisci ut voluptas. Deleniti laborum soluta nihil est. Eum similique
                   neque autem ut.</span></p>
@@ -154,7 +142,7 @@
                 sed voluptate impedit. Ad et qui sint at qui animi animi rerum.</p>
             </article>
 
-            <article class="presentation__content">
+            <article class="slider__content">
               <h2 class="subheadling">Let's grow your business together</h2>
               <p><span>Optio reiciendis accusantium iusto architecto at quia minima maiores quidem, dolorum.</span>
               </p>
@@ -165,12 +153,15 @@
             </article>
 
           </div>
-
-
-
+          <div class="pagination__container">
+            <i class="pagination__before material-icons">arrow_back_ios</i>
+            <i class="pagination__next   material-icons">arrow_forward_ios</i>
+          </div>
         </div>
 
       </div>
+
+
 
     </section>
 
@@ -181,9 +172,13 @@
 
       <ul class="services__list">
         <li class="services__item">
+          <i></i>
+         
+          <div>
           <span><a class="services__link" href="#">Lorem lpsum</a></span>
           <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
             cupiditate non provident</p>
+          </div>
         </li>
 
         <li class="services__item">
