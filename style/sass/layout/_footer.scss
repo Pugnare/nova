@@ -5,16 +5,22 @@
   
   .--flex-row{
     display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
   }
 
   .container-main{
-    width: 45%;
+    width: 37%;
     margin-right: 50px;
+  }
+
+  .social-list{
+    display: flex;
   }
 
   .container-sub{
     display: flex;
-    padding-bottom: 80px;
+    
   }
 
   .content{

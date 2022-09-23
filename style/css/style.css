@@ -15,6 +15,11 @@
   --bg-third:rgb(247, 249, 252);
 }
 
+/*-- ICONS COLOR --------------------*/
+:root {
+  --orange: rgb(245, 120, 19);
+}
+
 /*---------------------------------------------------------------------------*\
   #RESET STYLE AND REGLE
 \*---------------------------------------------------------------------------*/
@@ -22,29 +27,13 @@ body {
   margin: 0;
 }
 
-h1 {
+h1, h2, h3 {
   margin: 0;
 }
 
 ul {
   margin: 0;
   padding: 0;
-}
-
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.area {
-  max-width: 1340px;
 }
 
 a {
@@ -186,7 +175,6 @@ a {
   #INTRO-SITE - section surposer dans la banniére
 \*---------------------------------------------------------------------------*/
 .intro-site__container {
-  width: 100%;
   top: 0;
   z-index: -1;
 }
@@ -229,6 +217,7 @@ a {
 .home__primary {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-top: 80px;
 }
 .home__headline {
@@ -236,6 +225,12 @@ a {
 }
 
 /*-- PRIMARY / SECTION PRESENTATION -*/
+.presentation__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1320px;
+}
 .presentation__headline--flex {
   position: relative;
   align-self: center;
@@ -246,55 +241,59 @@ a {
   min-width: 60px;
   left: 33%;
 }
-
-.slider__container {
-  display: flex;
-}
-
-.slider__img--width {
-  width: 45%;
-  margin-right: 9em;
-}
-.slider__img {
-  width: 100%;
-}
-
-.slider__carry {
+.presentation__carry {
   display: flex;
   align-items: center;
-  overflow: hidden;
-  width: 40%;
+  width: 1340px;
 }
-.slider__content--row {
+.presentation__content--row {
   display: flex;
+  width: 40%;
   position: relative;
+  overflow: hidden;
 }
-.slider__content {
+.presentation__debordement {
+  display: flex;
+}
+.presentation__content {
   display: flex;
   flex-direction: column;
   width: 476px;
   padding: 0 16px;
   margin: 0 10px;
 }
-
-.pagination__container {
+.presentation__img--width {
+  width: 45%;
+  margin-right: 9em;
+}
+.presentation__img {
+  width: 100%;
+  height: 100%;
+}
+.presentation .pagination__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
   width: 33em;
 }
-.pagination__before {
+.presentation .pagination__before {
   margin-left: -30px;
 }
 
 /*-- BINARY -------------------------*/
 .home__binary {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   padding-top: 80px;
 }
 
+.services__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1340px;
+}
 .services__headline {
   align-self: center;
   padding-bottom: 20px;
@@ -308,8 +307,21 @@ a {
   width: 440px;
   height: 115px;
 }
+.services__link {
+  display: flex;
+}
+.services__link i {
+  padding-top: 2px;
+  padding-right: 2em;
+}
 
 /*-- TERNARY ------------------------*/
+.home__ternary,
+.home__ternary--img-attachment {
+  width: initial;
+  width: 100%;
+}
+
 .home__ternary .bg--flex-column {
   display: flex;
   flex-direction: column;
@@ -323,23 +335,27 @@ a {
 }
 
 /*-- FOURTH -------------------------*/
-.home__fourth .task__container-main {
+.home__fourth {
+  display: flex;
+  justify-content: center;
+}
+.home__fourth .task__container {
+  display: flex;
+  flex-direction: column;
+  width: 1340px;
+}
+.home__fourth .task__content-main {
   display: flex;
   justify-content: space-between;
 }
-.home__fourth .task__container-sub {
+.home__fourth .task__content-sub {
   width: 740px;
-  margin-top: -20em;
-  padding-bottom: 20em;
 }
 .home__fourth .task__picture {
-  align-self: flex-end;
-  justify-self: flex-start;
+  width: 30%;
 }
 .home__fourth .task__list {
   display: flex;
-  justify-content: space-evenly;
-  width: 100%;
 }
 .home__fourth .task-items .task-list__level-sub {
   display: flex;
@@ -351,32 +367,38 @@ a {
 .home__fourth .insulating-holder {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 70%;
 }
 
 /*-- FIFTH --------------------------*/
 .home__fifth {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding-bottom: 80px;
-}
-.home__fifth .workplace--position-row {
-  display: flex;
-  padding: 25px;
-}
-.home__fifth .workplace__picture {
-  width: 310px;
-  padding: 10px;
-}
-.home__fifth .workplace__picture img {
-  width: 100%;
+  flex-direction: column;
 }
 
-/*-------------------------------------------------------------------------*\
-  #ABOUT
-\*---------------------------------------------------------------------------*/
+.workplace__container {
+  width: 1320px;
+  padding-bottom: 80px;
+}
+.workplace--position-row {
+  display: flex;
+  column-gap: 20px;
+}
+.workplace__content {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.workplace__image {
+  width: 100%;
+}
+.workplace__carry p {
+  text-align: justify;
+}
+.workplace__link a {
+  color: initial;
+}
+
 .footer-page {
   display: flex;
   flex-direction: column;
@@ -384,14 +406,18 @@ a {
 }
 .footer-page .--flex-row {
   display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
 }
 .footer-page .container-main {
-  width: 45%;
+  width: 37%;
   margin-right: 50px;
+}
+.footer-page .social-list {
+  display: flex;
 }
 .footer-page .container-sub {
   display: flex;
-  padding-bottom: 80px;
 }
 .footer-page .content {
   padding-left: 40px;
@@ -430,6 +456,13 @@ a {
 
 /*----------------------------------*/
 /*---------------------------------------------------------------------------*\
+  # DEFAULT
+\*---------------------------------------------------------------------------*/
+main {
+  background-color: var(--color-default);
+}
+
+/*---------------------------------------------------------------------------*\
   #BANNER
 \*---------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------*\
@@ -438,13 +471,17 @@ a {
 /*---------------------------------------------------------------------------*\
   #AREA - PRIMARY
 \*---------------------------------------------------------------------------*/
-main {
-  background-color: var(--color-default);
+.slider__container {
+  background-color: var(--bg-third);
 }
 
 /*---------------------------------------------------------------------------*\
   #AREA - BINARY
 \*---------------------------------------------------------------------------*/
+.services__list a {
+  color: black;
+}
+
 /*---------------------------------------------------------------------------*\
   #AREA - TRENARY
 \*---------------------------------------------------------------------------*/

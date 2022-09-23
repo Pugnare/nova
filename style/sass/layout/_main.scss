@@ -10,6 +10,7 @@
   &__primary {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 80px;
   }
 
@@ -18,12 +19,16 @@
   }
 }
 
-
-
-
 /*-- PRIMARY / SECTION PRESENTATION -*/
 
 .presentation {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1320px;
+  }
 
   &__headline--flex {
     position: relative;
@@ -36,40 +41,23 @@
     min-width: 60px;
     left: 33%;
   }
-}
-
-.slider {
-
-  &__container {
-    display: flex;
-  }
-}
-
-.slider {
-  //image
-
-  &__img--width {
-    width: 45%;
-    margin-right: 9em;
-  }
-
-  &__img {
-    width: 100%;
-  }
-}
-
-.slider {
 
   &__carry {
     display: flex;
     align-items: center;
-    overflow: hidden;
-    width: 40%;
+    ;
+    width: 1340px;
   }
 
   &__content--row {
     display: flex;
+    width: 40%;
     position: relative;
+    overflow: hidden;
+  }
+
+  &__debordement {
+    display: flex;
   }
 
   &__content {
@@ -79,20 +67,30 @@
     padding: 0 16px;
     margin: 0 10px;
   }
-}
 
-.pagination {
-
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    width: 33em;
+  &__img--width {
+    width: 45%;
+    margin-right: 9em;
   }
 
-  &__before {
-    margin-left: -30px;
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .pagination {
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      width: 33em;
+    }
+
+    &__before {
+      margin-left: -30px;
+    }
   }
 }
 
@@ -100,11 +98,18 @@
 
 .home__binary {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   padding-top: 80px;
+
 }
 
 .services {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1340px;
+  }
 
   &__headline {
     align-self: center;
@@ -121,11 +126,27 @@
     width: 440px;
     height: 115px;
   }
+
+  &__link {
+    display: flex;
+
+    i {
+      padding-top: 2px;
+      padding-right: 2em;
+    }
+  }
 }
 
 
 
 /*-- TERNARY ------------------------*/
+
+.home__ternary,
+.home__ternary--img-attachment {
+  width: initial;
+  width: 100%;
+
+}
 
 .home__ternary {
 
@@ -147,29 +168,35 @@
 /*-- FOURTH -------------------------*/
 
 .home__fourth {
+  display: flex;
+  justify-content: center;
 
   .task {
 
-    &__container-main {
+    &__container {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      width: 1340px;
     }
 
-    &__container-sub {
+    &__content-main {
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    &__content-sub {
       width: 740px;
-      margin-top: -20em;
-      padding-bottom: 20em;
+
     }
 
     &__picture {
-      align-self: flex-end;
-      justify-self: flex-start;
+      width: 30%;
     }
 
     &__list {
       display: flex;
-      justify-content: space-evenly;
-      width: 100%;
+
     }
   }
 
@@ -188,8 +215,6 @@
   .insulating-holder {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 70%;
   }
 
 }
@@ -199,32 +224,37 @@
 
 .home__fifth {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding-bottom: 80px;
-
-  .workplace {
-    &--position-row {
-      display: flex;
-      padding: 25px;
-    }
-
-    &__picture {
-      width: 310px;
-      padding: 10px;
-
-      img {
-        width: 100%
-      }
-    }
-  }
+  flex-direction: column;
 }
 
+.workplace {
 
+  &__container {
+    width: 1320px;
+    padding-bottom: 80px;
+  }
 
+  &--position-row {
+    display: flex;
+    column-gap: 20px;
+  }
 
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
 
+  &__image {
+    width: 100%
+  }
 
-/*-------------------------------------------------------------------------*\
-  #ABOUT
-\*---------------------------------------------------------------------------*/
+  &__carry p{
+    text-align: justify ;
+  }
+
+  &__link a{
+    color: initial;
+  }
+}
