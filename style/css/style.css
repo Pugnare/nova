@@ -270,15 +270,13 @@ a {
   width: 100%;
   height: 100%;
 }
-.presentation .pagination__container {
+
+.pagination__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-self: center;
+  width: 100%;
   position: absolute;
-  width: 33em;
-}
-.presentation .pagination__before {
-  margin-left: -30px;
 }
 
 /*-- BINARY -------------------------*/
@@ -342,17 +340,31 @@ a {
 .home__fourth .task__container {
   display: flex;
   flex-direction: column;
-  width: 1340px;
+  width: 100%;
 }
-.home__fourth .task__content-main {
+.home__fourth .task__content {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
-.home__fourth .task__content-sub {
-  width: 740px;
+.home__fourth .task__carry {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.home__fourth .task__detail {
+  width: 100%;
+}
+.home__fourth .task__detail p {
+  width: 370px;
+}
+.home__fourth .task__list--padding, .home__fourth .task__detail--padding {
+  padding: 120px;
 }
 .home__fourth .task__picture {
-  width: 30%;
+  width: 26%;
+  position: absolute;
+  right: 0;
 }
 .home__fourth .task__list {
   display: flex;
@@ -363,10 +375,6 @@ a {
 }
 .home__fourth .task-items .task-list__level-sub .item {
   padding: 10px;
-}
-.home__fourth .insulating-holder {
-  display: flex;
-  flex-direction: column;
 }
 
 /*-- FIFTH --------------------------*/
@@ -497,6 +505,10 @@ main {
 /*---------------------------------------------------------------------------*\
   #AREA - FOURTH
 \*---------------------------------------------------------------------------*/
+.task__detail {
+  background-color: var(--bg-third);
+}
+
 /*---------------------------------------------------------------------------*\
 AREA PRIMARY - PRESENTATION
 \*---------------------------------------------------------------------------*/
