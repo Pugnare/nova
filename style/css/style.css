@@ -162,10 +162,7 @@ a {
   justify-content: space-around;
   align-items: baseline;
   padding: 1.6em 0;
-}
-
-.branding {
-  z-index: 2;
+  z-index: 9999;
 }
 
 /*---------------------------------------------------------------------------*\
