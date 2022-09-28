@@ -14,10 +14,6 @@
     margin-right: 50px;
   }
 
-  .social-list{
-    display: flex;
-  }
-
   .container-sub{
     display: flex;
     
@@ -29,5 +25,16 @@
 
   span{
     align-self: center;
+  }
+}
+
+.social-list{
+  display: flex;
+
+  &__item{
+    margin-right: 10px;
+  }
+  &__icon{
+    padding: 10px;
   }
 }
